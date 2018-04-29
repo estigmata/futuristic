@@ -1,0 +1,43 @@
+[class^='col-xs-'] {
+	float: left;
+}
+
+.col-xs-1 {
+  width: 10%;
+}
+
+.col-xs-2 {
+  width: 20%;
+}
+
+.col-xs-3 {
+  width: 30%;
+}
+
+.col-xs-4 {
+  width: 40%;
+}
+
+.col-xs-5 {
+  width: 50%;
+}
+
+.col-xs-6 {
+  width: 60%;
+}
+
+.col-xs-7 {
+  width: 70%;
+}
+
+.col-xs-8 {
+  width: 80%;
+}
+
+.col-xs-9 {
+  width: 90%;
+}
+
+.col-xs-10 {
+  width: 100%;
+}

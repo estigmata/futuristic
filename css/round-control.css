@@ -1,0 +1,73 @@
+.round-control {
+  height: 100%
+}
+
+.circles {
+  height: 460px;
+  margin: 0 auto;
+  position: relative;
+  width: 460px;
+}
+
+[class^='circle-'] {
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.circle-0 {
+  border: 1px solid #016fc4;
+  height: 100%;
+  width: 100%;
+}
+
+.circle-1 {
+  background-image: linear-gradient(#017bd4, #010916);
+  border: 2px solid #01132b;
+  height: calc(100% - 1px);
+  width: calc(100% - 1px);
+}
+
+.circle-2 {
+  background-image: linear-gradient(#004682, #010916);
+  height: 85%;
+  left: 8%;
+  top: 8%;
+  width: 85%;
+}
+
+.circle-3 {
+  background-color: #01162e;
+  border: 5px solid #00fefc;
+  height: 70%;
+  left: 15%;
+  top: 15%;
+  width: 70%;
+}
+
+.circle-4 {
+  background-color: #01162e;
+  border: 1px solid rgba(0, 86, 157, 0.95);
+  height: 56%;
+  left: 22%;
+  top: 22%;
+  width: 56%;
+}
+
+.circle-5 {
+  background-color: #01162e;
+  border: 1px solid #0274c6;
+  height: 30%;
+  left:35%;
+  top: 35%;
+  width: 30%;
+}
+
+.circle-content {
+  color: #fff;
+  font-size: 36px;
+  left: 50%;
+  text-shadow: -1px -1px 10px #3da7ec;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
