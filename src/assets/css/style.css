@@ -1,0 +1,127 @@
+@import 'https://fonts.googleapis.com/css?family=Play:400,700';
+@import './columns.css';
+@import './round-control.css';
+@import './cube.css';
+@import './buttons.css';
+
+body,
+html {
+  background-color: #01132b;
+  color: #fff;
+  height: 100vh;
+  font-family: 'Play';
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+h1, h2, h5 {
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+}
+
+h1 {
+  color: #fdff77;
+  font-size: 27px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.title {
+  background-color: #004c98;
+  color: #02feff;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+.songs-title {
+  background-color: #013066;
+  height: 100px;
+  padding: 10px;
+}
+
+.divider {
+  background-color: #01539d;
+  height: 10px;
+}
+
+.left-panel {
+  background-image: linear-gradient(#00b4fd, rgba(1, 19, 43, 0));
+  border-left: 5px solid #01539d;
+  height: calc(100vh - 140px);
+  overflow: auto;
+}
+
+.left-panel nav {
+  border-left: 5px solid #01539d;
+}
+
+.left-panel nav ul {
+  border: 1px solid #00b1ff;
+}
+
+.left-panel nav ul li {
+  background-color: #0376cf;
+  border: 1px solid #01ffff;
+  margin-bottom: 1px;
+  padding: 1px;
+}
+
+.left-panel nav ul li {
+  margin-bottom: 0;
+}
+
+.left-panel nav ul li a {
+  border-left: 5px solid #24fe2e;
+  color: #01ffff;
+  cursor: pointer;
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  margin: 1px;
+  padding-left: 5px;
+}
+
+.left-panel nav ul li a:hover {
+  background-color: rgba(0, 177, 255, 0.45);
+}
+
+.login {
+  background-color: transparent;
+  border: 2px solid #00fefc;
+  border-radius: 5px;
+  color: #24fe2e;
+  padding: 1px;
+}
+
+.login > div {
+  border-left: 5px solid #24fe2e;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.login > div:hover {
+  background-color: rgba(0, 177, 255, 0.45);
+}

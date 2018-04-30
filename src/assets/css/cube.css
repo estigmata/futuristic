@@ -1,4 +1,5 @@
 .cube-wraper {
+  cursor: pointer;
   height: 100%;
   margin: auto;
   position: relative;
@@ -42,11 +43,11 @@
 }
 
 .front {
-  transform: translateZ(-20px);
+  transform: translateZ(20px);
 }
 
 .back {
-  transform: rotateY(180deg) translateZ(-20px);
+  transform: rotateY(180deg) translateZ(20px);
 }
 
 .right {
@@ -85,4 +86,29 @@
 @keyframes spin-cube {
   from { transform: rotate(0); }
   to   { transform: rotate(360deg); }
+}
+
+.cube-wraper:hover .front {
+  background-color: #096bcc;
+  height: 80px;
+  transform: rotateY(180deg) translateZ(-40px);
+  width: 80px;
+}
+
+.cube-wraper:hover .back {
+  height: 80px;
+  transform: translateZ(-40px);
+  width: 80px;
+}
+
+.cube-wraper:hover .top {
+  transform: rotateX(-270deg) translateY(-40px) translateZ(40px);
+}
+
+.cube-wraper:hover .bottom {
+  transform: rotateX(270deg) translateY(40px) translateZ(40px);
+}
+
+.back img {
+  max-width: 100%;
 }
