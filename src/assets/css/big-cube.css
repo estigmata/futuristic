@@ -1,0 +1,93 @@
+.wrap {
+  margin-top: 75px;
+}
+
+.big-cube {
+  margin: auto;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+
+  .big-cube div {
+      position: absolute;
+      padding: 10px;
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      opacity: 0.9;
+      background-color: #013066;
+      border: solid 1px #eee;
+      color: #fff;
+      font-size: 12px;
+      transition: transform 0.2s ease-in;
+  }
+
+.bfront {
+  transform: translateZ(100px);
+}
+
+.bback {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.bright {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bleft {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+}
+
+.btop {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+}
+
+.bbottom {
+  transform: rotateX(270deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+@keyframes big-rotate {
+  from {
+      transform: rotateY(0deg) ;
+  }
+
+  to {
+      transform: rotateY(360deg);
+  }
+}
+
+.big-cube {
+  animation: big-rotate 20s infinite linear;
+}
+
+.wrap:hover .bfront {
+  transform: translateZ(200px);
+}
+
+.wrap:hover .bback {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.wrap:hover .bright {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.wrap:hover .bleft {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.wrap:hover .btop {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.wrap:hover .bbottom {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}

@@ -3,10 +3,10 @@
 }
 
 .circles {
-  height: 460px;
+  height: 380px;
   margin: 0 auto;
   position: relative;
-  width: 460px;
+  width: 380px;
 }
 
 [class^='circle-'] {
@@ -37,8 +37,9 @@
 }
 
 .circle-3 {
+  animation: spin 30s infinite linear;
   background-color: #01162e;
-  border: 5px solid #00fefc;
+  border: 5px groove #00fefc;
   height: 70%;
   left: 15%;
   top: 15%;
@@ -46,8 +47,9 @@
 }
 
 .circle-4 {
+  animation: spin-inverse 15s infinite linear;
   background-color: #01162e;
-  border: 1px solid rgba(0, 86, 157, 0.95);
+  border: 1px dashed rgba(0, 86, 157, 0.95);
   height: 56%;
   left: 22%;
   top: 22%;
@@ -55,8 +57,10 @@
 }
 
 .circle-5 {
+  animation: spin 30s infinite linear;
   background-color: #01162e;
-  border: 1px solid #0274c6;
+  border: 1px #0274c6;
+  border-style: double dashed;
   height: 30%;
   left:35%;
   top: 35%;
@@ -70,4 +74,14 @@
   text-shadow: -1px -1px 10px #3da7ec;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-inverse {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
 }

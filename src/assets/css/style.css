@@ -3,6 +3,7 @@
 @import './round-control.css';
 @import './cube.css';
 @import './buttons.css';
+@import './big-cube.css';
 
 body,
 html {
@@ -12,6 +13,7 @@ html {
   font-family: 'Play';
   font-size: 13px;
   margin: 0;
+  overflow: hidden;
   padding: 0;
   width: 100%;
 }
@@ -74,6 +76,16 @@ ul {
   overflow: auto;
 }
 
+.left-panel::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.left-panel::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
+
 .left-panel nav {
   border-left: 5px solid #01539d;
 }
@@ -98,10 +110,14 @@ ul {
   color: #01ffff;
   cursor: pointer;
   display: block;
+  font-size: 11px;
   height: 23px;
   line-height: 23px;
   margin: 1px;
+  overflow: hidden;
   padding-left: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .left-panel nav ul li a:hover {
